@@ -7,11 +7,13 @@ import { MediaComponent } from './media/media.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DevHoursService } from './service/dev-hours.service';
 import { ProxySizeService } from './service/proxy-size.service';
+import { StddevComponent } from './stddev/stddev.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MediaComponent
+    MediaComponent,
+    StddevComponent
   ],
   imports: [
     BrowserModule,
