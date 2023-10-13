@@ -3,16 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MediaComponent } from './media/media.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DevHoursService } from './service/dev-hours.service';
+import { ProxySizeService } from './service/proxy-size.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DevHoursService, ProxySizeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
