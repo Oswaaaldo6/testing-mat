@@ -9,13 +9,15 @@ import { DevHoursService } from './service/dev-hours.service';
 import { ProxySizeService } from './service/proxy-size.service';
 import { StddevComponent } from './stddev/stddev.component';
 import { LinearRegressionComponent } from './linear-regression/linear-regression.component';
+import { CorrelationComponent } from './correlation/correlation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MediaComponent,
     StddevComponent,
-    LinearRegressionComponent
+    LinearRegressionComponent,
+    CorrelationComponent
   ],
   imports: [
     BrowserModule,
