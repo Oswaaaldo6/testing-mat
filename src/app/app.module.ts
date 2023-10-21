@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { DevHoursService } from './service/dev-hours.service';
 import { ProxySizeService } from './service/proxy-size.service';
 import { StddevComponent } from './stddev/stddev.component';
+import { LinearRegressionComponent } from './linear-regression/linear-regression.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MediaComponent,
-    StddevComponent
+    StddevComponent,
+    LinearRegressionComponent
   ],
   imports: [
     BrowserModule,
